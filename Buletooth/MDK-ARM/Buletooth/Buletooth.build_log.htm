@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2676915624@qq.com, 1, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\stm32 cubmx\stm_project\Buletooth\MDK-ARM\Buletooth.uvprojx
+Project File Date:  05/09/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Buletooth'
+compiling main.c...
+../Src/main.c(72): warning:  #1295-D: Deprecated declaration check - give arg types
+  int check();
+../Src/main.c(126): warning:  #223-D: function "usart2_printf" declared implicitly
+        usart2_printf("经度:%s\n纬度%s\n",Save_Data.longitude,Save_Data.latitude);
+../Src/main.c(285): warning:  #223-D: function "sqrt" declared implicitly
+    double a = sqrt(-2);
+../Src/main.c(291): warning:  #223-D: function "acos" declared implicitly
+    TAy = acos(Az / GVM) * (180 / PI); //角度处理
+../Src/main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=17388 RO-data=860 RW-data=36 ZI-data=2628  
+FromELF: creating hex file...
+"Buletooth\Buletooth.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.1.0.pack
+                Keil.STM32F1xx_DFP.2.1.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Buletooth
+  D:\Program Files\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  D:\Program Files\keil5\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

@@ -1,0 +1,4 @@
+-c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork -I ..\SYSTEM\delay -I ..\SYSTEM\sys -I ..\SYSTEM\usart -I ..\USER -I ..\STM32F10x_FWLib\inc -I ..\CORE -I ..\HARDWARE\ESP8266 -I ..\HARDWARE\TIMER -I ..\HARDWARE\USART3 -I ..\HARDWARE\LED -I ..\HARDWARE\ADC -I ..\SYSTEM\systick -I ..\HARDWARE\RTC -I ..\HARDWARE\DHT11
+-I"D:\Program Files\keil5\Keil\STM32F1xx_DFP\2.1.0\Device\Include"
+-D__UVISION_VERSION="536" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER
+-o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d --feedback "..\OBJ\USART.fed" "..\STM32F10x_FWLib\src\misc.c"
